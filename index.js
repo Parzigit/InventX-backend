@@ -57,3 +57,11 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
+
+// const cors = require('cors');
+// Allow all origins
+app.use(cors());
+// Allow specific origin(s)
+app.use(cors({
+  origin: 'https://invent-x.vercel.app/'
+}));
