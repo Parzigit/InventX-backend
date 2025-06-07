@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: [
-      // "http://localhost:3000", 
+      "http://localhost:3000", 
       "https://invent-x.vercel.app"
     ],
     credentials: true,
@@ -63,8 +63,8 @@ mongoose
 
 // const cors = require('cors');
 // Allow all origins
-app.use(cors());
-// Allow specific origin(s)
-app.use(cors({
-  origin: 'https://invent-x.vercel.app/'
-}));
+// app.use(cors());
+// // Allow specific origin(s)
+// app.use(cors({
+//   origin: 'https://invent-x.vercel.app/'
+// }));
